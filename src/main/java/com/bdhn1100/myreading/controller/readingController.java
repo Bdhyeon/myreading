@@ -6,4 +6,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class readingController {
+    @GetMapping("/searchBooks")
+    public String searchBooks(){
+        return "searchBooks";
+    }
 }

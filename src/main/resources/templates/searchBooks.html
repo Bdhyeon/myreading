@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>도서검색</title>
+    <script defer src="/js/searchBooks.js"></script>
+    <link href="/css/searchBooks.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<p th:text="도서검색"></p>
+<p>
+    <input id="Kakao_api_key" type="hidden" th:value="${@environment.getProperty('Kakao_api_key')}">
+    <input type="text" id="keyword" placeholder="도서를 검색하세요.">
+    <button id="searchBtn">검색</button>
+</p>
+<div id="result">
+</div>
+</body>
+</html>
