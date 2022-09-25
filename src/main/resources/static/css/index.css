@@ -1,0 +1,19 @@
+body{
+
+}
+
+.books{
+    font-size: 13px;
+    color: gray;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+}
+
+.authors{
+    font-weight: bold;
+    color: black;
+}
