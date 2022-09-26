@@ -10,6 +10,7 @@
 <body>
 <button id="findBooks">책 찾아보기</button>
 <form>
+    읽은 날짜: <input type="text" id="year">년 <input type="text" id="month">월 <input type="text" id="date">일<br/>
     <p id="thumbnail">썸네일</p>
     제목: <input type="text" id="title"><br/>
     지은이: <input type="text" id="authors"><br/>
@@ -18,15 +19,15 @@
     출판일: <input type="text" id="datetime"><br/>
     <p>
     별점: <select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
         </select>
     </p>
     감상평: <textarea id="review"></textarea><br/>
-    <p id="submit">작성</p>
+    <span id="submit">작성</span>
 </form>
 </body>
 </html>
