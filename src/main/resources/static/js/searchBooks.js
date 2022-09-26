@@ -46,7 +46,7 @@ function listBooks(){
                 contents += "<p class='datetime'>출판일자: " + data.datetime.substr(0,10) + "</p>";
 
                 newElement.innerHTML = contents;
-                newElement.addEventListener('click', function(e){
+                newElement.addEventListener('click', function(){
                     const selected = {
                         'thumbnail' : data.thumbnail,
                         'title' : data.title,
@@ -56,7 +56,7 @@ function listBooks(){
                         'datetime' : data.datetime.substr(0,10)
                     };
                     window.localStorage.setItem('selected', JSON.stringify(selected));
-
+                    window.close();
                 });
                 resultContainer.appendChild(newElement);
                 //console.log(data);

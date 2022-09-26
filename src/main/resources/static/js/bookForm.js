@@ -7,7 +7,7 @@ findBooks.addEventListener('click', function(){
     window.open(url, "도서검색", "width=400, height=500, scrollbars=yes");
 });
 
-document.getElementById('submit').addEventListener('click', function(){
+window.addEventListener('storage', function(){
     const selected = JSON.parse(localStorage.getItem('selected'));
     document.getElementById('thumbnail').innerHTML = "<img src='" + selected.thumbnail + "'>";
     document.getElementById('title').value = selected.title;
@@ -15,5 +15,4 @@ document.getElementById('submit').addEventListener('click', function(){
     document.getElementById('translators').value = selected.translators;
     document.getElementById('publisher').value = selected.publisher;
     document.getElementById('datetime').value = selected.datetime;
-    //console.log(selected);
 });
