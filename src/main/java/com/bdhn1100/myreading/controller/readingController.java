@@ -10,4 +10,9 @@ public class readingController {
     public String searchBooks(){
         return "searchBooks";
     }
+
+    @GetMapping("/bookForm")
+    public String bookForm(){
+        return "bookForm";
+    }
 }

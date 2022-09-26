@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>새로 기록하기</title>
+    <script defer src="/js/bookForm.js"></script>
+    <link href="/css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<button id="findBooks">책 찾아보기</button>
+<form>
+    <p id="thumbnail">썸네일</p>
+    제목: <input type="text" id="title"><br/>
+    지은이: <input type="text" id="authors"><br/>
+    옮긴이: <input type="text" id="translators"><br/>
+    출판사: <input type="text" id="publisher"><br/>
+    출판일: <input type="text" id="datetime"><br/>
+    <p>
+    별점: <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </p>
+    감상평: <textarea id="review"></textarea><br/>
+    <p id="submit">작성</p>
+</form>
+</body>
+</html>
