@@ -46,11 +46,12 @@ function listBooks(){
                 contents += "<p class='datetime'>출판일자: " + data.datetime.substr(0,10) + "</p>";
 
                 newElement.innerHTML = contents;
+                newElement.addEventListener("click", function(e){
+                    console.log(this);
+                });
                 resultContainer.appendChild(newElement);
                 //console.log(data);
                 //console.log(pages);
             });
         });
 }
-
-
